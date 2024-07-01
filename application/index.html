@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGISTICS</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center; /* Centers content vertically */
+            justify-content: space-between; /* Distributes space between items */
+        }
+
+        .text {
+            flex: 1; /* Takes up available space */
+            margin-right: 20px; /* Adds space between text and image */
+            font-size: 90px; /* Increases font size */
+            line-height: 1.3; /* Improves readability */
+        }
+
+        .image {
+            flex: 1; /* Takes up available space */
+            height: auto; /* Maintains aspect ratio */
+            width: 670px;
+            border-radius: 50px;
+            padding: 40px;
+        }
+
+        .one {
+            padding-left: 50px;
+        }
+
+        .login-button {
+            margin-left: 200px; /* Moves button more to the right */
+            font-size: 20px;
+            background-color: rgb(56, 71, 70);
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none; /* Ensures button looks like a link */
+            display: inline-block; /* Allows padding and background to work correctly */
+            text-align: center; /* Centers text horizontally */
+            line-height: 1; /* Centers text vertically */
+        }
+
+        .login-button:hover {
+            background-color: #dbd1d4;
+            color: black;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stacks text and image vertically */
+                text-align: center; /* Centers text */
+            }
+
+            .text {
+                margin-right: 0; /* Removes side margin */
+                margin-bottom: 20px; /* Adds space below text */
+            }
+
+            .login-button {
+                margin-left: 0; /* Resets margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="one">
+        <p class="text">Welcome <br>to the <br> tracking site</p>
+        <a class="login-button" href="http://localhost:3000/?customerId=&customerName=&contact=&email=&trackId=&status=#/product">LOGIN</a>
+    </div>
+    <div>
+        <img src="./Screenshot.png" alt="IMG" class="image">
+    </div>
+</div>
+
+</body>
+</html>
